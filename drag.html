@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dangeraffe</title>
+<style>
+canvas {
+	background:url(Images/backgroundsky.jpg);
+}
+</style>
+<link rel="stylesheet" href="Styles/styles.css" type="text/css" media="all" />
+<link rel="stylesheet" href="Styles/buttonStyles.css" type="text/css" media="all" />
+
+
+</head>
+<body>
+	<!--<div id="gameTitle"></div>-->
+	<p align='center'>Dangeraffe</p>
+
+	<div id='gameWrapper' style="width: 100%">
+		<div id='canvasWrapper'>
+			<canvas id='b2dCanvas' width='900' height='665'></canvas>
+			<!--<div id='quotes'></div>-->
+		</div>
+		<div id='gameInfo'>
+			<div id='topInfoBar'>
+				
+						<div id='dangerFaced'>
+
+							<div id="dangerFacedValue"></div>
+
+							<div id='dangerChanged'></div>
+							<div class="clear"></div>
+
+							<div id="dangerFacedLabel">danger units</div>
+							<br>
+
+							<div id='totalDangerLabel'>Total danger units endured:</div>
+							<div id='totalDangerValue'></div>
+						</div>
+					
+						<div id='infoButtons'>
+							<div id='trashButton' class='infoButton'></div>
+						</div>
+						<div class="clear"></div>
+				</div>
+			<div id='buttonsTable'>
+				<div id='upgradeTable'></div>
+				
+				<div id='gameText'></div>
+				<div id='upgradeDescription'></div>
+		</div>
+		
+		
+	</div>
+	
+	<div class="clear"></div>
+	<div id='mousex'></div>
+	<div id='mousey'></div>
+
+ <input type="number" id="constant1">
+ <input type="number" id="constant2">
+ <input type="number" id="constant3">
+ <input type="number" id="constant4">
+ <input type="number" id="constant5">
+	<input type="checkbox" id="debugDraw"> To Do:
+	<ul>
+		<li>Make circle objects actual circles (make the fixture a circle, body a circle)</li>
+		<li>Add boots to christmas mode</li>
+		<li>Christmas mode--hat with  dampening to  distance joints> http://www.emanueleferonato.com/2012/09/21/step-by-step-creation-of-a-box2d-soft-body-blob/</li>
+		<li>add lights to christmas mode</li>
+		<li>make fireball do something</li>
+		<li>Change background inside cave</li>
+		<li>Change mouse to be hand on things you can click so it's more intuitive</li>
+		<li>Handle deleting rocket properly</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		
+		
+		
+		<li>Add each leg as separate rotating entities</li>
+		<li>Add knees to legs</li>
+		<li>animations for when he's in the air</li>
+		<li>Adjust weights and densities of giraffe</li>
+		<li>Add more items</li>
+		<li>Add custom html to each upgrade</li>
+		<li>Ceiling Fan, poorly constructed ceiling fan,proximity mines,
+			grenade,rockets attached to body,waterelon (explode when close to
+			body),crabs(latch onto body)</li>
+		<li>Confidence Booster increases with visual upgrades</li>
+		<li>At some point, the canvas stretches out below and he can fall
+			through so he is always falling down into it</li>
+		<li>store progress in cookie</li>
+		<li>add balloons</li>
+		<li><a
+			href='http://stackoverflow.com/questions/544993/official-way-to-ask-jquery-wait-for-all-images-to-load-before-executing-somethin'>load
+				all images first</a></li>
+
+		<li>http://thecodeplayer.com/walkthrough/html5-canvas-experiment-a-cool-flame-fire-effect-using-particles</li>
+		<li>http://www.emanueleferonato.com/2012/01/17/create-real-explosions-with-box2d-adding-textures/</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	Completed:
+	<ul>
+		<li>function to randomly get a place on screen where an object can generate. Then apply this to all objects that spawn.</li>
+		<li>Add picture for sprinkles</li>
+		<li>Add Picture to plate</li>
+		<li>add picture to random object</li>
+		<li>Make beans can legitimate picture</li>
+		<li>Make brick legitimate picture</li>
+		<li>Make querypoint get the topmost image</li>
+		
+		
+		
+	</ul>
+
+</body>
+<script>
+var b2_compatibility = true;
+</script>
+<script src="Code/Libs/jsliquidfun.js" ></script>
+<!--<script src='Code/Box2dWeb-2.1.a.3.js'></script>-->
+<!--<script src='Code/Box2dWeb-2.1.a.3.js'>-->
+<!--<<script src="Code/jsbox2d.js"></script>-->
+<script src="Code/Libs/jquery-1.11.0.min.js"></script>
+<script src='Code/InitializeVariables.js'></script>
+<script src='Code/BodyDrawingFunctions.js'></script>
+<script src='Code/BodyGen.js'></script>
+<script src='Code/MultiFixture.js'></script>
+<script src="Code/CanvasDebug.js" ></script>
+<script src='Environment/Trash.js'></script>
+<script src='Environment/LeftWall.js'></script>
+<script src='Code/Animation.js'></script>
+<script src='Code/PageScripts.js'></script>
+<script src='Code/Libs/Point.js'></script>
+<script src='Code/ColorFunctions.js'></script>
+<script src='Upgrades/UpgradeProperties.js'></script>
+<script src='Environment/Cloud.js'></script>
+<script src='Environment/DivPhysics.js'></script>
+<script src='Environment/Snow.js'></script>
+
+<script src='Giraffe.js'></script>
+<script src='Upgrades/Bloobs.js'></script>
+<script src='Upgrades/MagicSprinkles.js'></script>
+<script src='Upgrades/WaterSpout.js'></script>
+<script src='Upgrades/Rocket.js'></script>
+<script src='Upgrades/Flame.js'></script>
+<script src='Upgrades/Upgrade.js'></script>
+<script src='Upgrades/Apple.js'></script>
+<script src='Upgrades/BeachBall.js'></script>
+<script src='Upgrades/Helmet.js'></script>
+<script src='Upgrades/Horn.js'></script>
+<script src='Upgrades/Fireball.js'></script>
+<script src='Upgrades/Potion.js'></script>
+<script src='Upgrades/UnfortunateObjects/CanOfBeans.js'></script>
+<script src='Upgrades/UnfortunateObjects/UnfortunateObjects.js'></script>
+<script src='Main.js'></script>
+<script src='Code/ContactListener.js'></script>
+<!--needs to be after upgrades, before helperfunctions-->
+<script src='Code/HelperFunctions.js'></script>
+
+</html>

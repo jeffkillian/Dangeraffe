@@ -1,0 +1,143 @@
+
+/*START TOP RIGHT BAR ###################################################*/
+#topInfoBar{
+	background-color: #3A4280;
+ 	padding: 15px;
+ 	width:100%-30px;
+
+}
+
+#dangerFacedValue{
+	color:#BAFFAD;
+	font-size:150%;
+	text-shadow: 2px 2px 4px #000000;
+	width:50px;
+	float:left;
+}
+#dangerChanged{
+	position:relative;
+	color:red;
+	float:left;
+	display:inline;
+	font-size:80%;
+	text-shadow: 2px 2px 4px #000000;
+}
+#dangerFacedLabel{
+	color:#FFF0A5;
+	font-size:80%;
+	display: inline;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.duSpent{
+	position: absolute;
+	font-size:120%;
+	
+}
+#totalDangerValue{
+	color:#BAFFAD;
+	font-size:80%;
+	display: inline;
+	text-shadow: 2px 2px 4px #000000;
+}
+#totalDangerLabel{
+	color:#FBDFFF;
+	font-size:80%;
+	display: inline;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+#dangerFaced{
+	float:left;
+}
+
+/*END TOP RIGHT BAR ###################################################*/
+
+#canvasWrapper{
+	vertical-align: top;
+	width:900px;
+	height:668px;
+	float:left;
+}
+#gameInfo{
+	vertical-align: top;
+    float: left;
+    width:30%;
+}
+
+#gameText{
+	overflow-y:auto;
+	height:200px;
+	border:1px solid black;
+	padding:5px;
+	margin:5px;
+}
+
+.clear { clear: both;}
+
+
+#quotes{
+    background-color: #CFDCE8;
+	text-align: center;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	color:#252210;
+	font-size: 120%;
+	position:absolute; bottom:150px; right:150px; 
+	
+}
+
+#gameTitle{
+	 position:absolute;
+	 z-index:10;
+	 
+	 
+}
+.upgradeTableDivWrapper{
+	width:50px;
+	height:50px;
+	vertical-align: top;
+    float: left;
+	border:2px solid white;
+}
+
+
+.unknownUpgrade{
+    background-color:#EFEFEF;
+}
+.upgradeIsPurchasable{
+	background-color:#A3F99D;
+}
+.upgradeIsPurchasable:hover{
+	border:2px solid blue;
+}
+
+.singlePurchaseIsActive{
+	border:2px solid green;
+}
+
+
+
+
+
+
+.gameTextUpgrade{
+	background-color:#A0D5FF;
+	font-family:Lucida Sans Unicode;
+	font-size:80%;
+}
+.gameTextQuote{
+	background-color:#BAFFAD;
+	font-family:Lucida Sans Unicode;
+	font-size:80%;
+}
+
+
+
+
+
+html *
+{
+   font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
